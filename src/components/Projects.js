@@ -49,8 +49,8 @@ const Projects = () => {
                     languages={'React.js, CSS'}
                     shortDesc={descPortfolio}
                     thumbnail={profilePic}
-                    codeLink={'#'}
-                    siteLink={'#'}
+                    codeLink={'https://github.com/matiaskari/portfolio'}
+                    siteLink={'https://gtrportfolio.herokuapp.com/'}
                 />
                 <Project
                     style={style.item}
