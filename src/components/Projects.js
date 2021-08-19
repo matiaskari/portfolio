@@ -36,11 +36,14 @@ const Projects = () => {
         },
         item: {
             width: '33%'
+        },
+        title: {
+            padding: '0 10px 5px 10px'
         }
     }
     return (
         <div>
-            <h1>My projects</h1>
+            <h1 style={style.title}>My projects</h1>
             <div style={style.content}>
                 <Project
                     style={style.item}

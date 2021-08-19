@@ -26,6 +26,15 @@ const Education = () => {
             <li>Accounting and Finance</li>
         </ul>
     </div>
+    const descTik = <div>
+        <p>Short description, studies include:</p>
+        <ul>
+            <li>Programming</li>
+            <li>Human-Computer Interaction</li>
+            <li>Databases</li>
+            <li>Mathematics</li>
+        </ul>
+    </div>
     return (
         <div>
             <h1>Education</h1>
@@ -34,8 +43,17 @@ const Education = () => {
                     style={style.item}
                     major={'Information Networks'}
                     school={'Aalto University'}
+                    level={'Master of Science'}
+                    years={'2021- (current)'}
+                    shortDesc={descInfo}
+                    thumbnail={infoLogo}
+                />
+                <School
+                    style={style.item}
+                    major={'Information Networks'}
+                    school={'Aalto University'}
                     level={'Bachelor of Science'}
-                    years={'2018-2021'}
+                    years={'2018-2020'}
                     shortDesc={descInfo}
                     thumbnail={infoLogo}
                 />
@@ -45,7 +63,7 @@ const Education = () => {
                     school={'Aalto University'}
                     level={'Bachelor of Science'}
                     years={'2015-2017'}
-                    shortDesc={descInfo}
+                    shortDesc={descTik}
                     thumbnail={tikLogo}
                 />
             </div>

@@ -12,7 +12,8 @@ const Project = ({ name, year, languages, shortDesc, thumbnail, codeLink, siteLi
             backgroundColor: '#eee'
         },
         pic: {
-            maxWidth: '60%',
+            maxWidth: '300px',
+            width: '60%',
             margin: '4% 20% 5% 20%',
             borderRadius: '20px',
         },

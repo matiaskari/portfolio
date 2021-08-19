@@ -14,16 +14,13 @@ const School = ({ major, school, level, years, shortDesc, thumbnail }) => {
         pic: {
             maxWidth: '60%',
             margin: '4% 20% 5% 20%',
-            borderRadius: '20px',
+            borderRadius: '10px',
         },
         button: { //the buttons also inherit global styles for <a>, see App.css
             padding: '4px 14px 4px 14px',
             marginLeft: '8px',
             backgroundColor: '#70b1df',
             borderRadius: '2px',
-        },
-        hidden: {
-            visibility: 'hidden'
         }
     }
     return (
@@ -44,7 +41,6 @@ const School = ({ major, school, level, years, shortDesc, thumbnail }) => {
                 </tr>
                 <tr><td>{shortDesc}</td></tr>
             </table>
-            <p style={style.hidden}>_</p>
         </div>
     )
 }

@@ -52,6 +52,7 @@ header {
     color: white;
     text-decoration: none;
     padding: 6px;
+    font-size: 1.4em;
 }
 .headerLink:hover {
     transition: ease-in-out;
