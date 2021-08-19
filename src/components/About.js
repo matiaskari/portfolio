@@ -22,7 +22,7 @@ const About = () => {
     }
     return (
         <div>
-            <img src={profilePic} style={style.pic} />
+            <img src={profilePic} style={style.pic} alt={'My face'} />
             <h1>About Me</h1>
             <div style={style.block}>
                 <h2 style={style.heading}>Overview</h2>

@@ -33,7 +33,7 @@ const Project = ({ title, subTitle, year, languages, shortDesc, thumbnail, codeL
     }
     return (
         <div style={style.content}>
-            <img src={thumbnail} style={style.pic} />
+            <img src={thumbnail} style={style.pic} alt={'Project logo'} />
             <h2 style={style.title}>{title}</h2>
             <h3 style={style.title}>{subTitle}</h3>
             <p>Year: {year}</p>

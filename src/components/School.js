@@ -22,7 +22,7 @@ const School = ({ major, school, level, years, shortDesc, thumbnail }) => {
     }
     return (
         <div style={style.content}>
-            <img src={thumbnail} style={style.pic} />
+            <img src={thumbnail} style={style.pic} alt={'School track logo'} />
             <h2 style={style.title}>{major}</h2>
             <h3 style={style.title}>{school}</h3>
             <p>Level: {level}</p>
