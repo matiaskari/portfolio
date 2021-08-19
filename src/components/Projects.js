@@ -5,14 +5,20 @@ import renegeoLogo from './img/renegeologo.png'
 import reaktorLogo from './img/reaktorlogo.png'
 
 const Projects = () => {
-    const descPortfolio = <p>This portfolio that you are currently viewing is made with React.js</p>
+    const descPortfolio = <div>
+        <p>This portfolio that you are currently viewing is made with React.js</p>
+        <p>This is a simple portfolio website made to showcase my different projects I've made. I wanted to do a small project to see how my recently obtained React.js skills were.</p>
+    </div>
     const descReaktorFall21 = <div>
         <p>This website was made for the Reaktor Junior Developer pre-assignment for fall 2021.</p>
         <p>
             The solution dynamically imports a text file from Wizards of the Coast and creates an interactive rulebook with a clickable table of contents
-            for reading individual chapters. It also features a filtering search field.
+            for reading individual chapters. It also features a filtering search field. I have also hosted a CORS proxy server on Heroku, through which
+            this site imports the text file.
         </p>
-        <p>This was the first full project that I completed using React.js after learning it earlier the same year.</p>
+        <p>This was the first full project that I completed using React.js after learning it earlier the same year. I feel that this project was a significant
+            improvement over the previous project made for summer.
+        </p>
     </div>
     const descReaktorSummer2021 = <div>
         <p>This website was made for the Reaktor Junior Developer pre-assignment for summer 2021.</p>
@@ -27,7 +33,11 @@ const Projects = () => {
             <li>All data being blocked by CORS</li>
         </ul>
     </div>
-    const descRenegeo = <p>This website was made as an university project with HTML, CSS and JavaScript and is the first website I ever made.</p>
+    const descRenegeo = <div>
+        <p>This website was made as a university project with HTML, CSS and JavaScript and is the first website I ever made.</p>
+        <p>The Contact page on this site features a couple of JavaScript apps made as practice projects. The first one is a weather display that
+            fetches information from an API and the second is a very basic social media app made in collaboration with Sampo Rapeli.</p>
+    </div>
 
     const style = {
         content: {
@@ -47,7 +57,7 @@ const Projects = () => {
             <div style={style.content}>
                 <Project
                     style={style.item}
-                    name={'Portfolio'}
+                    title={'Portfolio'}
                     year={'2021'}
                     languages={'React.js, CSS'}
                     shortDesc={descPortfolio}
@@ -57,7 +67,8 @@ const Projects = () => {
                 />
                 <Project
                     style={style.item}
-                    name={'Magic: the Gathering Rulebook | Reaktor Junior Developer Assignment Fall 2021'}
+                    title={'Magic: the Gathering Rulebook'}
+                    subTitle={'Reaktor Junior Developer Assignment Fall 2021'}
                     year={'2021'}
                     languages={'React.js, Node.js'}
                     shortDesc={descReaktorFall21}
@@ -67,7 +78,8 @@ const Projects = () => {
                 />
                 <Project
                     style={style.item}
-                    name={'Inventory Management Tool | Reaktor Junior Developer Assignment Summer 2021'}
+                    title={'Inventory Management Tool'}
+                    subTitle={'Reaktor Junior Developer Assignment Summer 2021'}
                     year={'2020'}
                     languages={'Javascript (vanilla), HTML, CSS'}
                     shortDesc={descReaktorSummer2021}
@@ -77,7 +89,8 @@ const Projects = () => {
                 />
                 <Project
                     style={style.item}
-                    name={'Geothermal Energy | School project'}
+                    title={'Geothermal Energy'}
+                    subTitle={'School project'}
                     year={'2019'}
                     languages={'HTML, CSS, JavaScript (vanilla)'}
                     shortDesc={descRenegeo}

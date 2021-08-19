@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Project = ({ name, year, languages, shortDesc, thumbnail, codeLink, siteLink }) => {
+const Project = ({ title, subTitle, year, languages, shortDesc, thumbnail, codeLink, siteLink }) => {
     const style = {
         content: {
             margin: '10px',
@@ -12,9 +12,10 @@ const Project = ({ name, year, languages, shortDesc, thumbnail, codeLink, siteLi
             backgroundColor: '#eee'
         },
         pic: {
-            maxWidth: '300px',
-            width: '60%',
-            margin: '4% 20% 5% 20%',
+            maxWidth: '290px',
+            maxHeight: '290px',
+            width: '58%',
+            margin: '4% 21% 5% 21%',
             borderRadius: '20px',
         },
         button: { //the buttons also inherit global styles for <a>, see App.css
@@ -32,7 +33,10 @@ const Project = ({ name, year, languages, shortDesc, thumbnail, codeLink, siteLi
             <img src={thumbnail} style={style.pic} />
             <table style={style.table}>
                 <tr>
-                    <td><h2>{name}</h2></td>
+                    <td><h2>{title}</h2></td>
+                </tr>
+                <tr>
+                    <td><h3>{subTitle}</h3></td>
                 </tr>
                 <tr>
                     <td><p>Year: {year}</p></td>

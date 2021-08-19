@@ -6,3 +6,7 @@ and what better project to showcase than the portfolio itself! I also wanted to 
 ## Technologies
 
 This portfolio site is made with React.js and uses the React-router-dom library for navigation between pages.
+
+## Link to the website
+
+https://gtrportfolio.herokuapp.com/

@@ -14,7 +14,7 @@ const School = ({ major, school, level, years, shortDesc, thumbnail }) => {
         pic: {
             maxWidth: '60%',
             margin: '4% 20% 5% 20%',
-            borderRadius: '10px',
+            borderRadius: '5px',
         },
         button: { //the buttons also inherit global styles for <a>, see App.css
             padding: '4px 14px 4px 14px',
@@ -34,7 +34,7 @@ const School = ({ major, school, level, years, shortDesc, thumbnail }) => {
                     <td><h3>{school}</h3></td>
                 </tr>
                 <tr>
-                    <td><p>{level}</p></td>
+                    <td><p>Level: {level}</p></td>
                 </tr>
                 <tr>
                     <td><p>Years: {years}</p></td>

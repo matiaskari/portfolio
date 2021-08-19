@@ -35,7 +35,7 @@ const About = () => {
                 <h3 style={style.heading}>Languages</h3>
                 <p>Finnish (native), English (fluent), German (good), Swedish (good)</p>
                 <h3 style={style.heading}>Programming</h3>
-                <p>Scala, Java, C, HTML, CSS, JavaScript, React.js, Node.js</p>
+                <p>Scala, Java, HTML, CSS, JavaScript, React.js, Node.js</p>
                 <h3 style={style.heading}>Other</h3>
                 <p>Microsoft Excel, Adobe Photoshop, Google Analytics</p>
             </div>

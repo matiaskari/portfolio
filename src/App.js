@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import backgroundImage from './components/img/DSC_0463.JPG'
 
 //Components
@@ -55,9 +55,10 @@ const App = () => {
             <div style={styles.container}>
                 <div style={styles.about}><About /></div>
                 <div style={styles.content}>
-                    <Route path="/projects"><Projects /></Route>
-                    <Route path="/education"><Education /></Route>
-                    <Route path="/"><Redirect to="/projects" /></Route>
+                    <Switch>
+                        <Route path="/education"><Education /></Route>
+                        <Route path="/"><Projects /></Route>
+                    </Switch>
                 </div>
             </div>
         </Router>
