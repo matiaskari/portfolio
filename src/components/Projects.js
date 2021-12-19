@@ -73,7 +73,7 @@ const Projects = () => {
 
                     shortDesc={descSDP}
                     thumbnail={naistenlinjaLogo}
-                    button1link={'#'}
+                    button1link={'/naistenlinja'}
                     button1name={'Read more'}
                 />
                 <Project

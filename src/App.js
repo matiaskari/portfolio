@@ -8,6 +8,7 @@ import Header from './components/Header'
 import About from './components/About'
 import Projects from './components/Projects'
 import Education from './components/Education'
+import NaistenLinja from './components/NaistenLinja'
 
 const App = () => {
     const styles = {
@@ -57,6 +58,7 @@ const App = () => {
                 <div style={styles.content}>
                     <Switch>
                         <Route path="/education"><Education /></Route>
+                        <Route path="/naistenlinja"><NaistenLinja /></Route>
                         <Route path="/"><Projects /></Route>
                     </Switch>
                 </div>
