@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Project = ({ title, subTitle, year, languages, shortDesc, thumbnail, codeLink, siteLink }) => {
+const Project = ({ title, subTitle, year, info1, shortDesc, thumbnail, button1link, button2link, button1name, button2name }) => {
     const style = {
         content: {
             margin: '10px',
@@ -37,10 +37,15 @@ const Project = ({ title, subTitle, year, languages, shortDesc, thumbnail, codeL
             <h2 style={style.title}>{title}</h2>
             <h3 style={style.title}>{subTitle}</h3>
             <p>Year: {year}</p>
-            <p>Languages: {languages}</p>
+            <p>{info1}</p>
             {shortDesc}
-            <a href={codeLink} style={style.button}>View code</a>
-            <a href={siteLink} style={style.button}>Visit site</a>
+            {button2link ?
+                <div>
+                    <a href={button1link} style={style.button}>{button1name}</a>
+                    <a href={button2link} style={style.button}>{button2name}</a>
+                </div> :
+                <a href={button1link} style={style.button}>{button1name}</a>
+            }
             <p style={style.hidden}>_</p>
         </div>
     )

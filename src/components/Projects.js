@@ -3,8 +3,19 @@ import Project from './Project'
 import profilePic from './img/profile.jpg'
 import renegeoLogo from './img/renegeologo.png'
 import reaktorLogo from './img/reaktorlogo.png'
+import naistenlinjaLogo from './img/naistenlinjalogo.png'
 
 const Projects = () => {
+    const descSDP = <div>
+        <p>
+            This project was a Digital Service Design project created in a team of 4 as a university course work for Naisten Linja, a non-profit organization that helps
+            women who have experienced violence or who worry that they might experience it in the future.
+        </p>
+        <p>
+            The solution was to restructure their website to be more user friendly and to create an awareness campaign, because during the design process it became
+            apparent that the two biggest problems were people's overall lack of awareness of their services and the difficulty of use once they did reach the website.
+        </p>
+    </div>
     const descPortfolio = <div>
         <p>This portfolio that you are currently viewing is made with React.js</p>
         <p>This is a simple portfolio website made to showcase my different projects I've made. I wanted to do a small project to see how my recently obtained React.js skills were.</p>
@@ -57,46 +68,64 @@ const Projects = () => {
             <div style={style.content}>
                 <Project
                     style={style.item}
+                    title={'Societal Design Project: Naisten Linja'}
+                    year={'2021'}
+
+                    shortDesc={descSDP}
+                    thumbnail={naistenlinjaLogo}
+                    button1link={'#'}
+                    button1name={'Read more'}
+                />
+                <Project
+                    style={style.item}
                     title={'Portfolio'}
                     year={'2021'}
-                    languages={'React.js, CSS'}
+                    info1={'Languages: React.js, CSS'}
                     shortDesc={descPortfolio}
                     thumbnail={profilePic}
-                    codeLink={'https://github.com/matiaskari/portfolio'}
-                    siteLink={'https://gtrportfolio.herokuapp.com/'}
+                    button1link={'https://github.com/matiaskari/portfolio'}
+                    button2link={'https://gtrportfolio.herokuapp.com/'}
+                    button1name={'View code'}
+                    button2name={'Visit site'}
                 />
                 <Project
                     style={style.item}
                     title={'Magic: the Gathering Rulebook'}
                     subTitle={'Reaktor Junior Developer Assignment Fall 2021'}
                     year={'2021'}
-                    languages={'React.js, Node.js'}
+                    info1={'Languages: React.js, Node.js'}
                     shortDesc={descReaktorFall21}
                     thumbnail={reaktorLogo}
-                    codeLink={'https://github.com/matiaskari/reaktorfall21'}
-                    siteLink={'https://reaktorfall21.herokuapp.com/'}
+                    button1link={'https://github.com/matiaskari/reaktorfall21'}
+                    button2link={'https://reaktorfall21.herokuapp.com/'}
+                    button1name={'View code'}
+                    button2name={'Visit site'}
                 />
                 <Project
                     style={style.item}
                     title={'Inventory Management Tool'}
                     subTitle={'Reaktor Junior Developer Assignment Summer 2021'}
                     year={'2020'}
-                    languages={'Javascript (vanilla), HTML, CSS'}
+                    info1={'Languages: Javascript (vanilla), HTML, CSS'}
                     shortDesc={descReaktorSummer2021}
                     thumbnail={reaktorLogo}
-                    codeLink={'https://github.com/matiaskari/reaktorThing'}
-                    siteLink={'https://matiaskari.github.io/reaktorApp/reaktorApp.html'}
+                    button1link={'https://github.com/matiaskari/reaktorThing'}
+                    button2link={'https://matiaskari.github.io/reaktorApp/reaktorApp.html'}
+                    button1name={'View code'}
+                    button2name={'Visit site'}
                 />
                 <Project
                     style={style.item}
                     title={'Geothermal Energy'}
                     subTitle={'School project'}
                     year={'2019'}
-                    languages={'HTML, CSS, JavaScript (vanilla)'}
+                    info1={'Languages: HTML, CSS, JavaScript (vanilla)'}
                     shortDesc={descRenegeo}
                     thumbnail={renegeoLogo}
-                    codeLink={'https://matiaskari.github.io/geohtml.html'}
-                    siteLink={'https://users.aalto.fi/~karim6/index.html'}
+                    button1link={'https://matiaskari.github.io/geohtml.html'}
+                    button2link={'https://users.aalto.fi/~karim6/index.html'}
+                    button1name={'View code'}
+                    button2name={'Visit site'}
                 />
             </div>
         </div>
