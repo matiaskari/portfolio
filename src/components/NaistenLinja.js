@@ -7,8 +7,11 @@ import interview2 from './img/nl_project/interview2.png'
 
 const Projects = () => {
     const style = {
-        content: {
-
+        button: { //the buttons also inherit global styles for <a>, see App.css
+            padding: '4px 14px 4px 14px',
+            margin: '0 10px 0 0',
+            backgroundColor: '#417ec4',
+            borderRadius: '2px',
         },
         item: {
             width: '33%'
@@ -70,7 +73,10 @@ const Projects = () => {
                 </p>
                 <img src={interview2} style={style.pic} alt={'Second round of interviews'} />
                 <img src={userbenefits} style={style.pic} alt={'User benefits'} />
+
             </div>
+            <br />
+            <a href={'/projects'} style={style.button}>Back</a>
         </div>
     )
 }

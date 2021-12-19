@@ -20,8 +20,8 @@ const Project = ({ title, subTitle, year, info1, shortDesc, thumbnail, button1li
         },
         button: { //the buttons also inherit global styles for <a>, see App.css
             padding: '4px 14px 4px 14px',
-            margin: '0 10px 0 0',
-            backgroundColor: '#70b1df',
+            margin: '10px 10px 0 0',
+            backgroundColor: '#417ec4',
             borderRadius: '2px',
         },
         title: {
