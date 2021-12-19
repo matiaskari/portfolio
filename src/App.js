@@ -33,7 +33,7 @@ const App = () => {
             borderRadius: '10px',
             borderWidth: '2px',
             borderColor: '#417ec4',
-            backgroundColor: 'rgba(255, 255, 255, 0.7)',
+            backgroundColor: 'rgba(255, 255, 255, 0.85)',
         },
         content: {
             flex: '3', //Rules width
@@ -46,7 +46,7 @@ const App = () => {
             borderRadius: '10px',
             borderWidth: '2px',
             borderColor: '#417ec4',
-            backgroundColor: 'rgba(255, 255, 255, 0.7)',
+            backgroundColor: 'rgba(255, 255, 255, 0.85)',
         }
     }
 
