@@ -88,8 +88,6 @@ const Projects = () => {
                     thumbnail={googlexcelLogo}
                     button1name={'Read more'}
                     button1link={'/apexsheet'}
-                    button2name={'Download sheet'}
-                    button2link={'#'}
                 />
                 <Project
                     style={style.item}

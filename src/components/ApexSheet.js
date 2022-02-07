@@ -52,6 +52,7 @@ const Projects = () => {
             </div>
             <br />
             <a href={'/projects'} style={style.button}>Back</a>
+            <a href={'./img/apexsheet/Match_stats.xslx'} style={style.button} download>Download .xslx</a>
         </div>
     )
 }
