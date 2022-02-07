@@ -6,6 +6,11 @@ import reaktorLogo from './img/reaktorlogo.png'
 import naistenlinjaLogo from './img/naistenlinjalogo.png'
 
 const Projects = () => {
+    const descReaktorSummer2022 = <div>
+        <p>This project was made as the pre-assignment for Reaktor's Junior Service Designer position for summer 2022.</p>
+        <p>The assignment described a fictional private healthcare company working in Finland that wanted to bring their digital services up to par with their competitors.</p>
+        <p>My solution featured multiple possible ways of streamlining the customer journey from booking an appointment to receiving care and everything that happens after.</p>
+    </div>
     const descSDP = <div>
         <p>
             This project was a Digital Service Design project created in a team of 4 as a university course work for Naisten Linja, a non-profit organization that helps
@@ -68,6 +73,17 @@ const Projects = () => {
             <div style={style.content}>
                 <Project
                     style={style.item}
+                    title={'Service Design: Heathcare App'}
+                    subTitle={'Reaktor Junior Service Designer Assignment Summer 2022'}
+                    year={'2022'}
+
+                    shortDesc={descReaktorSummer2022}
+                    thumbnail={reaktorLogo}
+                    button1link={'/reaktor22'}
+                    button1name={'Read more'}
+                />
+                <Project
+                    style={style.item}
                     title={'Societal Design Project: Naisten Linja'}
                     year={'2021'}
 
@@ -83,10 +99,10 @@ const Projects = () => {
                     info1={'Languages: React.js, CSS'}
                     shortDesc={descPortfolio}
                     thumbnail={profilePic}
-                    button1link={'https://github.com/matiaskari/portfolio'}
-                    button2link={'https://gtrportfolio.herokuapp.com/'}
                     button1name={'View code'}
+                    button1link={'https://github.com/matiaskari/portfolio'}
                     button2name={'Visit site'}
+                    button2link={'https://gtrportfolio.herokuapp.com/'}
                 />
                 <Project
                     style={style.item}
@@ -96,10 +112,10 @@ const Projects = () => {
                     info1={'Languages: React.js, Node.js'}
                     shortDesc={descReaktorFall21}
                     thumbnail={reaktorLogo}
-                    button1link={'https://github.com/matiaskari/reaktorfall21'}
-                    button2link={'https://reaktorfall21.herokuapp.com/'}
                     button1name={'View code'}
+                    button1link={'https://github.com/matiaskari/reaktorfall21'}
                     button2name={'Visit site'}
+                    button2link={'https://reaktorfall21.herokuapp.com/'}
                 />
                 <Project
                     style={style.item}
@@ -109,10 +125,10 @@ const Projects = () => {
                     info1={'Languages: Javascript (vanilla), HTML, CSS'}
                     shortDesc={descReaktorSummer2021}
                     thumbnail={reaktorLogo}
-                    button1link={'https://github.com/matiaskari/reaktorThing'}
-                    button2link={'https://matiaskari.github.io/reaktorApp/reaktorApp.html'}
                     button1name={'View code'}
+                    button1link={'https://github.com/matiaskari/reaktorThing'}
                     button2name={'Visit site'}
+                    button2link={'https://matiaskari.github.io/reaktorApp/reaktorApp.html'}
                 />
                 <Project
                     style={style.item}
@@ -122,10 +138,10 @@ const Projects = () => {
                     info1={'Languages: HTML, CSS, JavaScript (vanilla)'}
                     shortDesc={descRenegeo}
                     thumbnail={renegeoLogo}
-                    button1link={'https://matiaskari.github.io/geohtml.html'}
-                    button2link={'https://users.aalto.fi/~karim6/index.html'}
                     button1name={'View code'}
+                    button1link={'https://matiaskari.github.io/geohtml.html'}
                     button2name={'Visit site'}
+                    button2link={'https://users.aalto.fi/~karim6/index.html'}
                 />
             </div>
         </div>
