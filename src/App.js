@@ -10,6 +10,7 @@ import Projects from './components/Projects'
 import Education from './components/Education'
 import NaistenLinja from './components/NaistenLinja'
 import Reaktor22 from './components/Reaktor22'
+import ApexSheet from './components/ApexSheet'
 
 const App = () => {
     const styles = {
@@ -61,6 +62,7 @@ const App = () => {
                         <Route path="/education"><Education /></Route>
                         <Route path="/naistenlinja"><NaistenLinja /></Route>
                         <Route path="/reaktor22"><Reaktor22 /></Route>
+                        <Route path="/apexsheet"><ApexSheet /></Route>
                         <Route path="/"><Projects /></Route>
                     </Switch>
                 </div>

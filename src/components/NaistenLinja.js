@@ -22,6 +22,9 @@ const Projects = () => {
         pic: {
             maxHeight: '300px',
             marginRight: '10px'
+        },
+        content: {
+            paddingLeft: '10px'
         }
     }
     return (

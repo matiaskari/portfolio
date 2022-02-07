@@ -4,8 +4,16 @@ import profilePic from './img/profile.jpg'
 import renegeoLogo from './img/renegeologo.png'
 import reaktorLogo from './img/reaktorlogo.png'
 import naistenlinjaLogo from './img/naistenlinjalogo.png'
+import googlexcelLogo from './img/googleexcellogo.png'
 
 const Projects = () => {
+    const descApexSheet = <div>
+        <p>This Excel sheet contains numerical statistics collected from approximately 9 months of playing the video game Apex Legends.</p>
+        <p>
+            The sheet makes monthly complex calculations based on the data from 1653 matches, regarding average damage, kills, assists, knockdowns and team finishing position,
+            as well as the most common character that each player used and the most common map that the match was played on.
+        </p>
+    </div>
     const descReaktorSummer2022 = <div>
         <p>This project was made as the pre-assignment for Reaktor's Junior Service Designer position for summer 2022.</p>
         <p>The assignment described a fictional private healthcare company working in Finland that wanted to bring their digital services up to par with their competitors.</p>
@@ -73,24 +81,34 @@ const Projects = () => {
             <div style={style.content}>
                 <Project
                     style={style.item}
+                    title={'Video game statistics sheet'}
+                    year={'2021 - 2022'}
+                    info1={'Technologies: Google Sheets, converted to Microsoft Excel'}
+                    shortDesc={descApexSheet}
+                    thumbnail={googlexcelLogo}
+                    button1name={'Read more'}
+                    button1link={'/apexsheet'}
+                    button2name={'Download sheet'}
+                    button2link={'#'}
+                />
+                <Project
+                    style={style.item}
                     title={'Service Design: Heathcare App'}
                     subTitle={'Reaktor Junior Service Designer Assignment Summer 2022'}
                     year={'2022'}
-
                     shortDesc={descReaktorSummer2022}
                     thumbnail={reaktorLogo}
-                    button1link={'/reaktor22'}
                     button1name={'Read more'}
+                    button1link={'/reaktor22'}
                 />
                 <Project
                     style={style.item}
                     title={'Societal Design Project: Naisten Linja'}
                     year={'2021'}
-
                     shortDesc={descSDP}
                     thumbnail={naistenlinjaLogo}
-                    button1link={'/naistenlinja'}
                     button1name={'Read more'}
+                    button1link={'/naistenlinja'}
                 />
                 <Project
                     style={style.item}
