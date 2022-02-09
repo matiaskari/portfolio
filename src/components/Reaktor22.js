@@ -40,20 +40,35 @@ const Projects = () => {
                     of what happens before, during and after a doctor's appointment.
                 </p>
                 <h3>My concept</h3>
+                <p>
+                    My concept was to give the doctor some ready-made tools that they could use to provide the patient with instructions without needing to explain
+                    everything to every patient separately. This would be done via a premade library of self-care instructions where the doctor could choose
+                    the most applicable ones for that particular case. If appropriate instructions don't exist, the doctor could explain the instructions
+                    the old way.
+                </p>
                 <img src={concept} style={style.pic} alt={'The Concept'} />
                 <p>
-
+                    Lots of the time-consuming paperwork like sick-leave doctor's notes and easily forgettable things like keeping track of appointments, treatments, and
+                    prescribed medications (with prescription or not) would be shown and reminded of via the app so that everything can be found in the same place.
                 </p>
                 <h3>Customer value and Business potential</h3>
+                <p>
+                    Streamlining the entire process would improve the value for the customer. As the appointments take less time per person, there would be time for
+                    more of them. Also having the treatment instructions easily accessible and follow-up questions easy to do means the patient needs to spend less time
+                    on their treatment and can possibly reduce the number of required doctor's appointments.
+                </p>
                 <img src={customervalue} style={style.pic} alt={'Customer value'} />
                 <img src={businesspotential} style={style.pic} alt={'Business potential'} />
-                <p>
-
-                </p>
                 <h3>Next steps</h3>
+                <p>
+                    The next steps in the design process would obviously be to present these suggestions to the intended users: both doctors and patients.
+                    Creating a tangible prototype would be time-consuming but possibly beneficial in getting more in-depth results from the target group interviews.
+                </p>
                 <img src={nextsteps} style={style.pic} alt={'Next steps'} />
                 <p>
-
+                    A very important part of Service Design is getting a thorough picture of what the situation is currently. This assignment did not provide a thorough
+                    explanation of the current situation, so this project has been done largely based on assumptions. In a real setting, getting an idea of the current
+                    situation would be the first thing to do.
                 </p>
                 <h3>Customer journeys</h3>
                 <img src={customerjourney1} style={style.pic} alt={'Customer journey: Home care'} />
